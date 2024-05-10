@@ -69,6 +69,10 @@ insert into usuario values(null, 'Administrador', 'adm@adm.com.br', 'adm', true)
 
 insert into produto (nome, descricao, preco) values ('Burguer', 'Hamburguer de 180g, Queijo, Tomate, Alface e Cebola', 24.90);
 
+insert into produto (nome, descricao, preco) values ('Batata Frita', 'Batatas fritas crocantes e douradas', 12.00);
+
+insert into produto (nome, descricao, preco) values ('Milkshake', 'Milkeshake cremoso feito com sorvete de chocolate', 14.90);
+
 /*
 Select
 */
@@ -76,4 +80,4 @@ Select
 select * from usuario;
 select * from produto;
 select * from pedido;
-
+select * from pedido_item;
