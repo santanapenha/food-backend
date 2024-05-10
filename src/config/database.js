@@ -8,13 +8,9 @@ const con = mysql.createConnection({
     database: "food"
 });
 
-
 con.connect(function(err) {
     if (err) throw err;
     console.log("Conectado ao banco de dados");
 });
 
-
 export {con};
-
-

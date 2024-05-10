@@ -65,7 +65,7 @@ show columns from pedido_item;
 /*
 	Pular o banco
 */
-insert into usuario values(null, 'Adiministrador', 'adm@adm.com.br', 'adm', true);
+insert into usuario values(null, 'Administrador', 'adm@adm.com.br', 'adm', true);
 
 insert into produto (nome, descricao, preco) values ('Burguer', 'Hamburguer de 180g, Queijo, Tomate, Alface e Cebola', 24.90);
 
@@ -75,4 +75,5 @@ Select
 
 select * from usuario;
 select * from produto;
+select * from pedido;
 
