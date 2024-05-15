@@ -13,12 +13,12 @@
     "itens": [
         {
             "id_produto": 1,
-            "quantidae": 1,
+            "quantidade": 1,
             "valor_unitario": 24.90
         },
         {
             "id_produto": 2,
-            "quantidae": 1,
+            "quantidade": 1,
             "valor_unitario": 12.00
         }
     ]

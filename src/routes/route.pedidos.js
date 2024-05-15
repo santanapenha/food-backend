@@ -19,7 +19,7 @@ routePedido.post("/pedidos", function(req, res){
 
                     //Itens Pedido
                     for (let item of req.body.itens){
-                        sql = 'insert into pedido_item(id_pedido, id_produto, quantidade, valor_unitari)values (?, ?, ?, ?)';
+                        sql = 'insert into pedido_item(id_pedido, id_produto, quantidade, valor_unitario)values (?, ?, ?, ?)';
 
                         await query(sql, [id_pedido, item.id_produto, item.quantidade, item.valor_unitario]);
                     }
