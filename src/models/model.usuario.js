@@ -1,3 +1,4 @@
+import bcrypt from "bcrypt";
 import { con } from "../config/database.js";
 
 class UsuarioModel {
@@ -16,6 +17,10 @@ class UsuarioModel {
 
     // Método para criar um novo usuário
     static createUsuario(nome, email, senha, callback) {
+        // Criptografar senha 
+        const hash = bcrypt.hashSync(senha, 10);
+        senha = hash; 
+        
         let sql = `insert into usuario (nome, email, senha) values (?,?,?)`;
 
         con.query(sql, [nome, email, senha], function(err, result){
